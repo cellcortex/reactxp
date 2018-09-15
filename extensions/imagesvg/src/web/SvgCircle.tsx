@@ -14,7 +14,7 @@ import { SvgCircleProps } from '../common/Types';
 export class SvgCircle extends React.Component<SvgCircleProps, {}> {
   render() {
     return (
-      <rect
+      <circle
         fill={this.props.fillColor}
         fillOpacity={this.props.fillOpacity}
         stroke={this.props.strokeColor}
