@@ -8,35 +8,45 @@
 
 import { Types as RXTypes } from 'reactxp';
 
-export interface ImageSvgStyle extends RXTypes.ViewStyle {
-}
+export interface ImageSvgStyle extends RXTypes.ViewStyle {}
 export declare type ImageSvgStyleRuleSet = RXTypes.StyleRuleSet<ImageSvgStyle>;
 
 export interface SvgCommonProps {
-    key?: string | number;
-    strokeColor?: string;
-    strokeWidth?: number;
-    strokeOpacity?: number;
-    fillColor?: string;
-    fillOpacity?: number;
+  key?: string | number;
+  strokeColor?: string;
+  strokeWidth?: number;
+  strokeOpacity?: number;
+  fillColor?: string;
+  fillOpacity?: number;
 }
 
-export interface ImageSvgProps extends SvgCommonProps, RXTypes.CommonStyledProps<ImageSvgStyleRuleSet> {
-    children?: RXTypes.ReactNode;
-    height: number;
-    width: number;
-    accessibilityLabel?: string;
-    title?: string;
-    viewBox?: string;
-    preserveAspectRatio?: string;
-    webShadow?: string;
+export interface ImageSvgProps
+  extends SvgCommonProps,
+    RXTypes.CommonStyledProps<ImageSvgStyleRuleSet> {
+  children?: RXTypes.ReactNode;
+  height: number;
+  width: number;
+  accessibilityLabel?: string;
+  title?: string;
+  viewBox?: string;
+  preserveAspectRatio?: string;
+  webShadow?: string;
 }
 export interface SvgPathProps extends SvgCommonProps {
-    d?: string;
+  d?: string;
 }
 export interface SvgRectProps extends SvgCommonProps {
-    width: number;
-    height: number;
-    x: number;
-    y: number;
+  width: number;
+  height: number;
+  x: number;
+  y: number;
+}
+export interface SvgCircleProps extends SvgCommonProps {
+  cx: number;
+  cy: number;
+  r: number;
+}
+
+export interface SvgPolygonProps extends SvgCommonProps {
+  points: string;
 }

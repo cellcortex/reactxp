@@ -1,30 +1,31 @@
 /**
- * SvgPath.tsx
- * Copyright (c) Microsoft Corporation. All rights reserved.
+ * SvgCircle.tsx
  * Licensed under the MIT license.
  *
  * RN-specific implementation of the cross-platform abstraction for
- * SVG Path elements.
+ * SVG Circle elements.
  */
 
 import * as React from 'react';
 import * as RNSvg from 'react-native-svg';
 
-import { SvgPathProps } from '../common/Types';
+import { SvgCircleProps } from '../common/Types';
 
-export class SvgPath extends React.Component<SvgPathProps, {}> {
+export class SvgCircle extends React.Component<SvgCircleProps, {}> {
   render() {
     return (
-      <RNSvg.Path
+      <RNSvg.Circle
         fill={this.props.fillColor || '#fff'}
         strokeWidth={this.props.strokeWidth}
         strokeOpacity={this.props.strokeOpacity}
         fillOpacity={this.props.fillOpacity}
         stroke={this.props.strokeColor}
-        d={this.props.d}
+        cx={this.props.cx}
+        cy={this.props.cy}
+        r={this.props.r}
       />
     );
   }
 }
 
-export default SvgPath;
+export default SvgCircle;

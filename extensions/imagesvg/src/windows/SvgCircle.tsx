@@ -1,5 +1,5 @@
 /*
- * SvgPath.tsx
+ * SvgCircle.tsx
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT license.
  *
@@ -9,14 +9,14 @@
 
 import * as React from 'react';
 
-import { SvgPathProps } from '../common/Types';
+import { SvgCircleProps } from '../common/Types';
 
 // TODO: #694092 Not implemented
 
-export class SvgPath extends React.Component<SvgPathProps, {}> {
+export class SvgCircle extends React.Component<SvgCircleProps, {}> {
   render(): any {
     return null;
   }
 }
 
-export default SvgPath;
+export default SvgCircle;

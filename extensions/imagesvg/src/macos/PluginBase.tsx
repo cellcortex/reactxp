@@ -10,5 +10,7 @@ import * as Types from '../common/Types';
 import ImageSvg from '../native-common/ImageSvg';
 import SvgPath from '../native-common/SvgPath';
 import SvgRect from '../native-common/SvgRect';
+import SvgPolygon from '../native-common/SvgPolygon';
+import SvgCircle from '../native-common/SvgCircle';
 
-export { ImageSvg as default, SvgPath, SvgRect, Types };
+export { ImageSvg as default, SvgPath, SvgRect, SvgPolygon, SvgCircle, Types };
