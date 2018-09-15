@@ -10,5 +10,7 @@ import * as Types from '../common/Types';
 import ImageSvg from './ImageSvg';
 import SvgPath from './SvgPath';
 import SvgRect from './SvgRect';
+import SvgCircle from './SvgCircle';
+import SvgPolygon from './SvgPolygon';
 
-export { ImageSvg as default, SvgPath, SvgRect, Types };
+export { ImageSvg as default, SvgPath, SvgRect, SvgPolygon, SvgCircle, Types };
