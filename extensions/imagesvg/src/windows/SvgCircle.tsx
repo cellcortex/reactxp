@@ -14,9 +14,9 @@ import { SvgCircleProps } from '../common/Types';
 // TODO: #694092 Not implemented
 
 export class SvgCircle extends React.Component<SvgCircleProps, {}> {
-  render(): any {
-    return null;
-  }
+    render(): any {
+        return null;
+    }
 }
 
 export default SvgCircle;

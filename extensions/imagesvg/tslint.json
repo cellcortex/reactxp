@@ -5,7 +5,7 @@
     "curly": true,
     "eofline": true,
     "forin": true,
-    "indent": [true, "spaces"],
+    "indent": [true, "spaces", 4],
     "interface-name": [true, "never-prefix"],
     "label-position": true,
     "max-line-length": [ true, 140 ],

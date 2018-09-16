@@ -14,9 +14,9 @@ import { SvgPolygonProps } from '../common/Types';
 // TODO: #694092 Not implemented
 
 export class SvgPolygon extends React.Component<SvgPolygonProps, {}> {
-  render(): any {
-    return null;
-  }
+    render(): any {
+        return null;
+    }
 }
 
 export default SvgPolygon;

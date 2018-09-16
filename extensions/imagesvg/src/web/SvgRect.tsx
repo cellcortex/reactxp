@@ -15,15 +15,15 @@ export class SvgRect extends React.Component<SvgRectProps, {}> {
     render() {
         return (
             <rect
-                fill={ this.props.fillColor }
-                fillOpacity={ this.props.fillOpacity }
-                stroke={ this.props.strokeColor }
-                strokeOpacity={ this.props.strokeOpacity }
-                strokeWidth={ this.props.strokeWidth }
-                width={ this.props.width }
-                height={ this.props.height }
-                x={ this.props.x }
-                y={ this.props.y }
+                fill={this.props.fillColor}
+                fillOpacity={this.props.fillOpacity}
+                stroke={this.props.strokeColor}
+                strokeOpacity={this.props.strokeOpacity}
+                strokeWidth={this.props.strokeWidth}
+                width={this.props.width}
+                height={this.props.height}
+                x={this.props.x}
+                y={this.props.y}
             />
         );
     }

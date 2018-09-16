@@ -14,9 +14,9 @@ import { SvgPathProps } from '../common/Types';
 // TODO: #694092 Not implemented
 
 export class SvgPath extends React.Component<SvgPathProps, {}> {
-  render(): any {
-    return null;
-  }
+    render(): any {
+        return null;
+    }
 }
 
 export default SvgPath;

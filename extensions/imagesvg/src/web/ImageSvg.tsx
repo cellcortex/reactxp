@@ -18,10 +18,13 @@ export class ImageSvg extends React.Component<ImageSvgProps, {}> {
         assert.ok(this.props.width && this.props.height, 'The width and height on imagesvg are mandatory.');
 
         if (this.props.width > 0 && this.props.height > 0) {
-            let combinedStyles = RXStyles.combine([{
-                display: 'flex',
-                position: 'relative'
-            }, this.props.style]) as any;
+            let combinedStyles = RXStyles.combine([
+                {
+                    display: 'flex',
+                    position: 'relative'
+                },
+                this.props.style
+            ]) as any;
 
             if (this.props.fillColor !== undefined) {
                 combinedStyles.fill = this.props.fillColor;
@@ -61,13 +64,8 @@ export class ImageSvg extends React.Component<ImageSvgProps, {}> {
             }
 
             return (
-                <svg
-                    viewBox={ this.props.viewBox }
-                    style={ combinedStyles }
-                    height={ this.props.height  }
-                    width={ this.props.width }
-                >
-                    { this.props.children }
+                <svg viewBox={this.props.viewBox} style={combinedStyles} height={this.props.height} width={this.props.width}>
+                    {this.props.children}
                 </svg>
             );
         } else {
